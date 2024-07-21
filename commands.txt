@@ -1,0 +1,14 @@
+git init : to initialize local project folder as a git repo.
+git clone <https link> : to copy/download remote repo in our local machine. 
+ls -hidden : to see all files including .git
+git status: to check whether file is...
+            1. untracked : new file which is not in remote repo but in local folder (newly created at local folder).
+            2. modified  : file present in both local and remote repo but is updated at local repo.
+                           (file is one step forward than the remote repo).
+            3. staged    : file  is added (add) or ready to commit.
+            4. unmodified: file is commited (up to date).
+git add <file name> : add a particular file.
+git add .           : add all changes.
+git commit -m "message" : commit changes with message.
+git push origin main    : push/upload local folder to github.
+                          ( origin: default name of cloned repo, main: main branch).
