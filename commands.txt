@@ -1,14 +1,47 @@
-git init : to initialize local project folder as a git repo.
-git clone <https link> : to copy/download remote repo in our local machine. 
-ls -hidden : to see all files including .git
-git status: to check whether file is...
+1.  git init : to initialize local project folder as a git repo.
+2.  git clone <https link> : to copy/download remote repo in our local machine. 
+3.  ls -hidden : to see all files including .git
+4.  git status: to check whether file is...
             1. untracked : new file which is not in remote repo but in local folder (newly created at local folder).
             2. modified  : file present in both local and remote repo but is updated at local repo.
                            (file is one step forward than the remote repo).
             3. staged    : file  is added (add) or ready to commit.
             4. unmodified: file is commited (up to date).
-git add <file name> : add a particular file.
-git add .           : add all changes.
-git commit -m "message" : commit changes with message.
-git push origin main    : push/upload local folder to github.
-                          ( origin: default name of cloned repo, main: main branch).
+5.  git add <file name> : add a particular file.
+6.  git add .           : add all changes.
+7.  git commit -m "message" : commit changes with message.
+8.  git push origin main    : push/upload local folder to github.
+                              ( origin: default name of cloned repo, main: main branch).
+                              ( first type [git push -u origin main] to use shortcut as [git push] for every next push operation)
+9.  git remote add origin <https link> : to add local folder to git repo.
+10. git remote -v : to verify remote (git repo)
+
+11. git branch : to check current branch.
+11. git branch -M <new name> : to change name of branch.
+12. git checkout -b <new branch name> : to create new branch.
+13. git checkout <other branch name> : navigate to other branch.
+14. git branch -d <branch name> : delete a branch. (go to other branch then delete current one)
+15. git push origin <branch name> : push new branch on github.
+16. git diff <other branch name> : compare current branch with other branch.
+17. git merge <other branch name> : merge current branch with the other branch.
+                                    ( resolve merging conflicts manualy then push).
+18. git pull origin main : update local repo w.r.t github repo. (after successfully merging branches).
+
+
+
+# craete a project folder on local machine and push it on the github:
+i.      initialize folder with .git file : git init
+ii.     add changes : git add .
+iii.    commit changes : git commit -m "message" 
+iv.     #create a github repo on github and copy the https link. 
+v.      link the remote repo with local repo : git remote add origin <https link>
+vi.     verify the remote : git remote -v
+vi.     check branch name : git branch
+viii.   bydefault the current branch is "master" so rename it as a "main" : git branch -M main
+ix.     now push the code on remote repo : git push origin main
+        
+
+# general workflow :
+create github repo -> clone -> <work> -> add -> commit -> push
+
+
