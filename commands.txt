@@ -13,7 +13,7 @@
 8.  git push origin main    : push/upload local folder to github.
                               ( origin: default name of cloned repo, main: main branch).
                               ( first type [git push -u origin main] to use shortcut as [git push] for every next push operation)
-9.  git remote add origin <https link> : to add local folder to git repo.
+9.  git remote add origin <https link> : to add/upload local folder to git repo.
 10. git remote -v : to verify remote (git repo)
 
 11. git branch : to check current branch.
@@ -26,6 +26,11 @@
 17. git merge <other branch name> : merge current branch with the other branch.
                                     (resolve merging conflicts manualy then push).
 18. git pull origin main : update local repo w.r.t github repo. (after successfully merging branches [PR]).
+19. git reset <filename> OR git reset (for all) : to undo staged(add) changes.
+20. git reset HEAD~1 : undo one commit change.
+21. git reset <comimit hash> : undo multiple commits.
+                               (git log : to see all hash of each commit).
+22. git reset --hard <commit hash> : reflect changes to local repo.
 
 
 
