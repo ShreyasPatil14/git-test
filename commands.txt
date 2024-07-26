@@ -25,7 +25,7 @@
 16. git diff <other branch name> : compare current branch with other branch.
 17. git merge <other branch name> : merge current branch with the other branch.
                                     (resolve merging conflicts manualy then push).
-18. git pull origin main : update local repo w.r.t github repo. (after successfully merging branches).
+18. git pull origin main : update local repo w.r.t github repo. (after successfully merging branches [PR]).
 
 
 
