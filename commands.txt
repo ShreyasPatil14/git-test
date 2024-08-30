@@ -24,7 +24,7 @@
 15. git push origin <branch name> : push new branch on github.
 16. git diff <other branch name> : compare current branch with other branch.
 17. git merge <other branch name> : merge current branch with the other branch.
-                                    (resolve merging conflicts manualy then push).
+                                    (resolve merging conflicts manually then push).
 18. git pull origin main : update local repo w.r.t github repo. (after successfully merging branches [PR]).
 19. git reset <filename> OR git reset (for all) : to undo staged(add) changes.
 20. git reset HEAD~1 : undo one commit change.
@@ -48,5 +48,3 @@ ix.     now push the code on remote repo : git push origin main
 
 # general workflow :
 create github repo -> clone -> <work> -> add -> commit -> push
-
-
